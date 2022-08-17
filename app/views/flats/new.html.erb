@@ -1,0 +1,13 @@
+<div class='form'>
+  <%= simple_form_for [@flat] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <div class='form-input-together'>
+      <%= f.input :price_per_night %>
+
+      <%= f.input :number_of_guests %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>

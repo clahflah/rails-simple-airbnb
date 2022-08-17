@@ -1,0 +1,22 @@
+<div class="title">
+  <h1>All our Flats</h1>
+  <h2><em>All of our <%= @flats.length %> flats.</em></h2>
+</div>
+<div class='flats-display'>
+  <% @flats.each do |flat| %>
+  <div class ='flat-card'>
+    <img src="https://picsum.photos/400/200" alt="">
+    <h3><%= flat.name %></h3>
+    <div class="card-icons">
+      <p><i class="fa-solid fa-people-group"></i> <%= flat.number_of_guests %></p>
+      <p><i class="fa-solid fa-dollar-sign"></i> <%= flat.price_per_night %></p>
+    </div>
+    <div class='card-links'>
+      <%= link_to "Edit Flat", edit_flat_path(flat) %>
+      <%= link_to "Delete", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+    </div>
+  </div>
+  <% end %>
+
+
+</div>

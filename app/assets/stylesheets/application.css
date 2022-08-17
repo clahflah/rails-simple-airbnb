@@ -1,15 +1,113 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.flat-card {
+  width: 28%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+  margin: 15px 10px;
+  border-radius: 5px;
+}
+
+.flat-card h3 {
+  font-size: 24px;
+
+}
+
+.card-links{
+  display: flex;
+  background-color: #FFB238;
+  border-radius: 5%;
+  padding: 10px 10px;
+  justify-content: space-around;
+}
+
+.card-links a {
+  color: #F55536;
+  background-color: white;
+  padding: 4px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.card-links a:hover {
+  color: #F55536;
+  text-decoration: none;
+}
+
+.card-icons{
+  display: flex;
+  /* justify-content: space-around; */
+}
+.card-icons i{
+  padding-left: 30px;
+}
+.flats-display {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+.flat-card img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.nav-bar {
+  background-color: #FFB238;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.nav-bar a {
+  color: #F55536;
+  background-color: white;
+  padding: 4px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.nav-bar a:hover {
+  color: #F55536;
+  text-decoration: none;
+}
+.form {
+  margin: 30px auto;
+  width: 50%;
+  height: 80%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+
+.form-input-together {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-banner {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.show-box {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+  background-color: #F55536;
+  width: 60%;
+  border-radius: 5px;
+  margin: 30px auto;
+  color: #FFFFFF;
+  padding: 20px 20px;
+}
+
+.title {
+  margin-left: 7%;
+  color: #F55536;
+  font-weight: bold;
+}
+
+.flat-details {
+  display: flex;
+}
+
+.flat-details i {
+  padding-left: 20px;
+}
