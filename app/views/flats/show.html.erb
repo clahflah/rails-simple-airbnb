@@ -12,5 +12,5 @@
     <p><i class="fa-solid fa-dollar-sign"></i> <%= @flat.price_per_night %></p>
 </div>
 
-<%= link_to "Edit Flat", edit_flat_path %>
-<%= link_to "Delete", flat_path(@flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+<%= link_to "Edit Flat", edit_flat_path, class: 'button'%>
+<%= link_to "Delete", flat_path(@flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: 'button'%>

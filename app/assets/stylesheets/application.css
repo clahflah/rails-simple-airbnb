@@ -111,3 +111,18 @@ justify-content: center;
 .flat-details i {
   padding-left: 20px;
 }
+
+.button {
+  background-color: #F55536;
+  padding: 20px 50px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.button:hover{
+  text-decoration: none;
+  color: #FFFFFF;
+}
